@@ -23,7 +23,7 @@ export default function Chat() {
     }
 
     return (
-        <div className="relative h-full w-full flex flex-col items-center pb-[25px]">
+        <div className="w-full max-h-full overflow-y-scroll absolute bottom-0 pb-[15px] flex flex-col items-center gap-6">
             <ChatHistory messageHistory={messageHistory} isLoading={isLoading} />
             <ChatForm messageHistory={messageHistory} addMessage={addMessage} isLoading={isLoading} turnLoadingOn={turnLoadingOn} turnLoadingOff={turnLoadingOff} />
         </div>

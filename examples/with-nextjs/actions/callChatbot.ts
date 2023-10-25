@@ -27,7 +27,7 @@ export async function callChatbot(formData: FormData) {
         }
     })
 
-    const system = `You are a helpful chatbot for somebody's portfolio page. Your purpose is to provide information on this person to visitors.`
+    const system = `You are a helpful chatbot.`
 
     const chatCompletion: OpenAI.Chat.ChatCompletion = await openai.chat.completions.create({
         model: "gpt-3.5-turbo",

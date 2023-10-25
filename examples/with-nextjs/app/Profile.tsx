@@ -9,7 +9,7 @@ export default function Profile() {
             </div>
             <div className="w-fit h-full flex flex-col px-[20px] md:gap-1 pt-[5px]">
                 <h1 className="text-[28px] tracking-wide text-gray-800">John Doe</h1>
-                <h1 className={`bg-black w-fit text tracking-wide text-gray-100 px-[10px] py-[3px] rounded-xl ${dosis.light}`}>Developer</h1>
+                <h1 className={`bg-black w-fit text tracking-wide text-gray-100 px-[10px] py-[3px] rounded-xl`}>Developer</h1>
             </div>
         </div>
     )

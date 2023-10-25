@@ -1,8 +1,12 @@
 {
-  "name": "chat-fu",
+  "name": "chat-fu-with-nextjs",
   "version": "1.0.0",
-  "description": "",
-  "main": "next.config.js",
+  "description": "CLI to create a new Chat-Fu app",
+  "main": "index.js",
+  "bin": {
+    "create-chat-fu-app": "index.js"
+  },
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,7 +16,12 @@
     "type": "git",
     "url": "git+https://github.com/Chat-fu/chat-fu.git"
   },
-  "author": "",
+  "keywords": [
+    "cli",
+    "chat",
+    "app"
+  ],
+  "author": "Cristian Silva",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Chat-fu/chat-fu/issues"
@@ -20,6 +29,7 @@
   "homepage": "https://github.com/Chat-fu/chat-fu#readme",
   "dependencies": {
     "autoprefixer": "^10.4.16",
+    "inquirer": "^9.2.11",
     "next": "^13.5.6",
     "nextjs": "^0.0.3",
     "openai": "^4.13.0",
